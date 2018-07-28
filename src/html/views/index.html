@@ -1,0 +1,12 @@
+<% var data = {
+    title: "Заголовок | Проект",
+    textpage: "Static web site",
+    footerpage: "<small>(c) 2018 <b>Copyright by github</b></small>"
+  }; %>
+  <%= _.template(require('./../includes/header.html'))(data) %>
+  
+  <div class="container">
+    <center>Первая страница.</center>
+  </div>
+  
+  <%= _.template(require('./../includes/footer.html'))(data) %>
